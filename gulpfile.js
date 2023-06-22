@@ -58,6 +58,8 @@ function scripts() {
   return src([
       'node_modules/jquery/dist/jquery.js',
       'node_modules/swiper/swiper-bundle.min.js',
+      'node_modules/fullpage.js/vendors/easings.min.js',
+      'node_modules/fullpage.js/dist/fullpage.min.js',
       'app/js/main.js'
     ])
     .pipe(concat('main.min.js'))
@@ -70,6 +72,7 @@ function scripts() {
 function styles() {
   return src([
       'node_modules/swiper/swiper-bundle.min.css',
+      'node_modules/fullpage.js/dist/fullpage.min.css',
       'app/sass/style.sass'
     ])
     .pipe(sass({
